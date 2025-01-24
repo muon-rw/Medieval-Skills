@@ -1,0 +1,169 @@
+{
+    "basic_armor": {
+        "title": "Basic Armor Training",
+        "size": 0.8,
+        "description": "Fundamental armor techniques",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.armor",
+                    "value": 1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "iron_flesh": {
+        "title": "Iron Flesh",
+        "size": 0.9,
+        "description": "Toughen your body against damage",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.armor",
+                    "value": 2,
+                    "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.max_health",
+                    "value": 2,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "resilient": {
+        "title": "Resilient",
+        "size": 1.0,
+        "description": "Enhance natural healing",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.natural_regeneration",
+                    "value": 0.15,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "armor_expertise": {
+        "title": "Armor Expertise",
+        "size": 0.9,
+        "description": "Advanced armor techniques",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.armor_toughness",
+                    "value": 2,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "steadfast": {
+        "title": "Steadfast",
+        "size": 1.0,
+        "description": "Stand your ground",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.knockback_resistance",
+                    "value": 0.15,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "battle_recovery": {
+        "title": "Battle Recovery",
+        "size": 1.1,
+        "description": "Recover faster in combat",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "extraspellattributes.battlerouse",
+                    "value": 0.15,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "defiant": {
+        "title": "Defiant",
+        "size": 1.2,
+        "description": "Reduce incoming damage",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "extraspellattributes.defi",
+                    "value": 0.10,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "elemental_ward": {
+        "title": "Elemental Ward",
+        "size": 1.1,
+        "description": "Resist magical and ranged attacks",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.magic_resistance",
+                    "value": 0.10,
+                    "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.ranged_resistance",
+                    "value": 0.10,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "immovable": {
+        "title": "Immovable",
+        "size": 1.4,
+        "description": "Become an unbreakable fortress",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "extraspellattributes.glancingblow",
+                    "value": 0.20,
+                    "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "mythicmetals:carmot_shield",
+                    "value": 10,
+                    "operation": "addition"
+                }
+            }
+        ]
+    }
+}

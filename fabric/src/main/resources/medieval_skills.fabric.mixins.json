@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.muon.medieval.mixin",
+  "refmap": "${mod_id}.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "dev.muon.medieval_skills.MixinConfigPluginFabric",
+  "mixins": [
+    "dev.muon.medieval_skills.mixin.compat.dehydration.ItemStackMixin",
+    "dev.muon.medieval_skills.mixin.compat.dehydration.PotionItemMixin",
+    "dev.muon.medieval_skills.mixin.compat.spell_engine.TargetHelperMixin"
+  ],
+  "client": [
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
+  

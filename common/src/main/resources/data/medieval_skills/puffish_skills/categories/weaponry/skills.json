@@ -1,0 +1,158 @@
+{
+	"socy4pw0hybdnjor": {
+		"definition": "critical_expertise",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"w4kr1kd4h6brq5ke": {
+		"definition": "critical_expertise",
+		"x": 128,
+		"y": -80,
+		"root": false
+	},
+	"lxu4unejnfjl84rl": {
+		"definition": "executioner",
+		"x": -57,
+		"y": -59,
+		"root": false
+	},
+	"lsox3zgpmg90ydx0": {
+		"definition": "executioner",
+		"x": -128,
+		"y": -80,
+		"root": false
+	},
+	"hapb296c2iiyrt20": {
+		"definition": "executioner",
+		"x": -176,
+		"y": -64,
+		"root": false
+	},
+	"6awonh3hq9pkbm3w": {
+		"definition": "critical_expertise",
+		"x": 176,
+		"y": -64,
+		"root": false
+	},
+	"i9ft7asblt0advfw": {
+		"definition": "swift_strikes",
+		"x": 48,
+		"y": -128,
+		"root": false
+	},
+	"up5dho794y9zvjmp": {
+		"definition": "swift_strikes",
+		"x": 48,
+		"y": -192,
+		"root": false
+	},
+	"sg0s8fauj36u7hqj": {
+		"definition": "swift_strikes",
+		"x": 64,
+		"y": -256,
+		"root": false
+	},
+	"m2smxrnqqd241ccg": {
+		"definition": "precision_mastery",
+		"x": 64,
+		"y": -320,
+		"root": false
+	},
+	"uvav8b1eok355zco": {
+		"definition": "precision_mastery",
+		"x": 64,
+		"y": -384,
+		"root": false
+	},
+	"0dwt39yh02sflldk": {
+		"definition": "vampiric_strikes",
+		"x": 0,
+		"y": -240,
+		"root": false
+	},
+	"85zubgis85qxw1i7": {
+		"definition": "vampiric_strikes",
+		"x": 0,
+		"y": -352,
+		"root": false
+	},
+	"lu6renmcjvq2ghfh": {
+		"definition": "precision_mastery",
+		"x": 48,
+		"y": -448,
+		"root": false
+	},
+	"mu8d7tqmxvzw3a82": {
+		"definition": "blade_master",
+		"x": 16,
+		"y": -512,
+		"root": false
+	},
+	"4b17wnuckcjp9tk4": {
+		"definition": "powerful_strikes",
+		"x": -48,
+		"y": -128,
+		"root": false
+	},
+	"63i3in4mmgi8u241": {
+		"definition": "powerful_strikes",
+		"x": -48,
+		"y": -192,
+		"root": false
+	},
+	"0nemimzw8j76cadc": {
+		"definition": "powerful_strikes",
+		"x": -64,
+		"y": -256,
+		"root": false
+	},
+	"uznn20l7cdbnzylh": {
+		"definition": "crushing_blows",
+		"x": -64,
+		"y": -320,
+		"root": false
+	},
+	"78poyzoxv7vpq81h": {
+		"definition": "crushing_blows",
+		"x": -64,
+		"y": -384,
+		"root": false
+	},
+	"ldwp369h35perj73": {
+		"definition": "crushing_blows",
+		"x": -48,
+		"y": -448,
+		"root": false
+	},
+	"dmqft36ofxasgumh": {
+		"definition": "warrior_king",
+		"x": -16,
+		"y": -512,
+		"root": false
+	},
+	"zzzkfhyrprw9yond": {
+		"definition": "basic_weapon_training",
+		"x": -16,
+		"y": 32,
+		"root": false
+	},
+	"f52ykgxj0rwvnnqp": {
+		"definition": "basic_weapon_training",
+		"x": 16,
+		"y": 32,
+		"root": false
+	},
+	"4u44epbxixcgd53n": {
+		"definition": "basic_weapon_training",
+		"x": 0,
+		"y": 96,
+		"root": true
+	},
+	"jc9qjsyoknftyphh": {
+		"definition": "basic_weapon_training",
+		"x": 0,
+		"y": -32,
+		"root": false
+	}
+}

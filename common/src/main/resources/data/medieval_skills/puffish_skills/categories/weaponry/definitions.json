@@ -1,0 +1,332 @@
+{
+    "basic_weapon_training": {
+        "title": "Basic Weapon Training",
+        "size": 1.0,
+        "description": "+3% Attack Damage",
+        "extra_description": "Fundamental combat techniques",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "minecraft:wooden_sword"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_damage",
+                    "value": 0.03,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "intermediate_weapon_training": {
+        "title": "Intermediate Weapon Training",
+        "size": 1.0,
+        "description": "+5% Attack Damage",
+        "extra_description": "Standard combat techniques",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "minecraft:stone"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_damage",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "swift_strikes": {
+        "title": "Swift Strikes",
+        "size": 1.0,
+        "description": "+5% Attack Speed",
+        "extra_description": "Quick, precise attacks",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "rogues:aether_sickle"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_speed",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+    "precision_mastery": {
+        "title": "Precision Mastery",
+        "size": 1.0,
+        "description": "+5% Armor Shred",
+        "extra_description": "Find weak points in enemy armor",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "more_rpg_classes:molten_armor"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes:armor_shred",
+                    "value": 0.05,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+    "critical_expertise": {
+        "title": "Critical Expertise",
+        "size": 1.0,
+        "description": "+25% Critical Strike Damage",
+        "extra_description": "Master the art of critical strikes",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "archers:hunters_mark"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "additionalentityattributes:player.critical_bonus_damage",
+                    "value": 0.25,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "powerful_strikes": {
+        "title": "Powerful Strikes",
+        "size": 1.0,
+        "description": "+10% Attack Damage",
+        "extra_description": "Channel raw strength into your attacks",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "minecraft:mace"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_damage",
+                    "value": 0.1,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+    "crushing_blows": {
+        "title": "Crushing Blows",
+        "size": 1.0,
+        "description": "+30% Attack Knockback",
+        "extra_description": "Overwhelm enemies with mighty strikes",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "elemental_wizards_rpg:updraft"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_knockback",
+                    "value": 0.3,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+    "executioner": {
+        "title": "Executioner",
+        "size": 1.0,
+        "description": "+15% Cleaving",
+        "extra_description": "Master lethal finishing moves",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "raid_omen"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:cleaving",
+                    "value": 0.15,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "vampiric_strikes": {
+        "title": "Vampiric Strikes",
+        "size": 1.1,
+        "description": "+4% Life Steal",
+        "extra_description": "Drain life from your enemies",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "more_rpg_classes:bleeding"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes:life_steal",
+                    "value": 0.04,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+    
+    "blade_master": {
+        "title": "Blade Master",
+        "size": 1.4,
+        "description": "+15% Attack Speed, +35% Critical Strike Damage",
+        "extra_description": "Perfect the art of swift, deadly strikes",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "challenge"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "eternal_starlight:energy_sword"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_speed",
+                    "value": 0.15,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "additionalentityattributes:player.critical_bonus_damage",
+                    "value": 0.35,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "warrior_king": {
+        "title": "Warrior King",
+        "size": 1.4,
+        "description": "+25% Attack Damage, +20% Cleaving",
+        "extra_description": "Become a legendary warrior of overwhelming might",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "challenge"
+            }
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "witcher_rpg:aether_witcher_sword"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_damage",
+                    "value": 0.25,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:cleaving",
+                    "value": 0.20,
+                    "operation": "addition"
+                }
+            }
+        ]
+    }
+}

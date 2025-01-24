@@ -1,0 +1,86 @@
+{
+    "experience_per_level": {
+        "type": "expression",
+        "data": {
+            "expression": "min(level ^ 1.432 + 10, 200)"
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:take_damage",
+            "data": {
+                "variables": {
+                    "base_damage": {
+                        "operations": [
+                            {
+                                "type": "get_taken_damage"
+                            }
+                        ]
+                    },
+                    "has_light_armor": {
+                        "operations": [
+                            {
+                                "type": "get_player"
+                            },
+                            {
+                                "type": "as_living_entity"
+                            },
+                            {
+                                "type": "puffish_skills:attribute",
+                                "data": {
+                                    "attribute": "generic.armor"
+                                }
+                            },
+                            {
+                                "type": "get_value"
+                            },
+                            {
+                                "type": "compare",
+                                "data": {
+                                    "operator": "<",
+                                    "value": 10
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 1,
+                                    "false": 0.2
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": "base_damage * has_light_armor * 0.3"
+            }
+        },
+        {
+            "type": "puffish_skills:stat",
+            "data": {
+                "variables": {
+                    "is_jump": {
+                        "operations": [
+                            {
+                                "type": "get_stat"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "stat": "minecraft.custom:minecraft.jump"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 1,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": "is_jump * 2"
+            }
+        }
+    ]
+}

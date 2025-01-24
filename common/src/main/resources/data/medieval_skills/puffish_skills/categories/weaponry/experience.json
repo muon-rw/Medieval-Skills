@@ -1,0 +1,88 @@
+{
+    "experience_per_level": {
+        "type": "expression",
+        "data": {
+            "expression": "min(level ^ 1.432 + 10, 200)"
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:deal_damage",
+            "data": {
+                "variables": {
+                    "base_damage": {
+                        "operations": [
+                            {
+                                "type": "get_dealt_damage"
+                            }
+                        ]
+                    },
+                    "is_magic": {
+                        "operations": [
+                            {
+                                "type": "get_damage_source"
+                            },
+                            {
+                                "type": "get_type"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "damage_type": "#c:is_magic"
+                                }
+                            }
+                        ]
+                    },
+                    "is_projectile": {
+                        "operations": [
+                            {
+                                "type": "get_damage_source"
+                            },
+                            {
+                                "type": "get_type"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "damage_type": "#is_projectile"
+                                }
+                            }
+                        ]
+                    },
+                    "is_dummy": {
+                        "operations": [
+                            {
+                                "type": "get_damaged_living_entity"
+                            },
+                            {
+                                "type": "as_entity"
+                            },
+                            {
+                                "type": "get_type"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "entity_type": "dummmmmmy:target_dummy"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 0.01,
+                                    "false": 1.0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "!is_magic & !is_projectile",
+                        "expression": "base_damage * is_dummy * 0.5"
+                    }
+                ]
+            }
+        }
+    ]
+}

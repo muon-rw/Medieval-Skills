@@ -1,0 +1,194 @@
+{
+    "basic_agility": {
+        "title": "Basic Agility",
+        "size": 0.8,
+        "description": "Fundamental movement techniques",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.movement_speed",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "swift_reflexes": {
+        "title": "Swift Reflexes",
+        "size": 0.9,
+        "description": "Enhance your combat speed",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_speed",
+                    "value": 0.10,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "ranged_weapon:haste",
+                    "value": 0.08,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "nimble_movement": {
+        "title": "Nimble Movement",
+        "size": 1.0,
+        "description": "Master acrobatic maneuvers",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.jump",
+                    "value": 0.15,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.fall_reduction",
+                    "value": 0.20,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "combat_roll": {
+        "title": "Combat Roll",
+        "size": 1.1,
+        "description": "Master evasive maneuvers",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "combat_roll:distance",
+                    "value": 0.15,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "combat_roll:count",
+                    "value": 1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    
+    "quick_recovery": {
+        "title": "Quick Recovery",
+        "size": 0.9,
+        "description": "Faster combat roll recovery",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "combat_roll:recharge",
+                    "value": -0.15,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "light_footed": {
+        "title": "Light Footed",
+        "size": 1.0,
+        "description": "Move silently and swiftly",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.movement_speed",
+                    "value": 0.08,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes.step_height",
+                    "value": 0.5,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "combat_momentum": {
+        "title": "Combat Momentum",
+        "size": 1.1,
+        "description": "Build speed in combat",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "generic.attack_speed",
+                    "value": 0.08,
+                    "operation": "multiply_total"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "ranged_weapon:haste",
+                    "value": 0.05,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    },
+
+    "evasive_expertise": {
+        "title": "Evasive Expertise",
+        "size": 1.2,
+        "description": "Master of evasion",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims.attribute.name.dodge_chance",
+                    "value": 0.08,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "shadow_dancer": {
+        "title": "Shadow Dancer",
+        "size": 1.4,
+        "description": "Become one with the shadows",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims.attribute.name.dodge_chance",
+                    "value": 0.15,
+                    "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "spell_power:haste",
+                    "value": 0.10,
+                    "operation": "multiply_total"
+                }
+            }
+        ]
+    }
+}

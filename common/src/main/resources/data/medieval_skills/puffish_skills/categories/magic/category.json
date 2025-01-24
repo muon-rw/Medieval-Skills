@@ -1,0 +1,11 @@
+{
+    "unlocked_by_default": true,
+    "title": "Magic",
+    "icon": {
+        "type": "item",
+        "data": {
+            "item": "wizards:staff_wizard"
+        }
+    },
+    "background": "textures/gui/advancements/backgrounds/end.png"
+}

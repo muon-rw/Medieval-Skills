@@ -1,0 +1,162 @@
+{
+    "basic_mining": {
+        "title": "Basic Mining",
+        "size": 0.8,
+        "description": "Fundamental mining techniques",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:player.mining_speed",
+                    "value": 0.05,
+                    "operation": "multiply_base"
+                }
+            }
+        ]
+    },
+
+    "efficient_miner": {
+        "title": "Efficient Miner",
+        "size": 0.9,
+        "description": "Improve mining efficiency",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:player.mining_speed",
+                    "value": 0.10,
+                    "operation": "multiply_base"
+                }
+            }
+        ]
+    },
+
+    "prospector": {
+        "title": "Prospector",
+        "size": 0.9,
+        "description": "Find more valuable resources",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:player.fortune",
+                    "value": 0.2,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "tool_mastery": {
+        "title": "Tool Mastery",
+        "size": 1.0,
+        "description": "Master mining tool maintenance",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:unbreaking",
+                    "value": 1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "magnetic_field": {
+        "title": "Magnetic Field",
+        "size": 1.0,
+        "description": "Attract items from further away",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "additionalentityattributes:player.collection_range",
+                    "value": 0.2,
+                    "operation": "addition"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:item_magnet",
+                    "value": 1.0,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "rush_mining": {
+        "title": "Rush Mining",
+        "size": 1.1,
+        "description": "Enter a mining frenzy",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:miners_rush",
+                    "value": 1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "self_repair": {
+        "title": "Self Repair",
+        "size": 1.1,
+        "description": "Tools occasionally repair themselves",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:overgrown",
+                    "value": 1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "master_prospector": {
+        "title": "Master Prospector",
+        "size": 1.2,
+        "description": "Significantly increase resource finds",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:player.fortune",
+                    "value": 0.3,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+
+    "mining_expertise": {
+        "title": "Mining Expertise",
+        "capstone": true,
+        "size": 1.4,
+        "description": "Master of mining techniques",
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:player.mining_speed",
+                    "value": 0.25,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "bettertrims:miners_rush",
+                    "value": 2,
+                    "operation": "addition"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.muon.medieval.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "dev.muon.medieval_skills.MixinConfigPluginNeoForge",
+  "mixins": [
+    "dev.muon.medieval_skills.mixin.MobEffectMixin",
+    "dev.muon.medieval_skills.mixin.compat.apotheosis.ModifierInstMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.AbstractSpellMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.CastingImplementMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.CurioBaseItemMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.MagicDataMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.MagicManagerMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.ManaBarOverlayMixin"
+  ],
+  "client": [
+    "dev.muon.medieval_skills.mixin.compat.ars_nouveau.GuiManaHUDMixin",
+    "dev.muon.medieval_skills.mixin.compat.irons_spellbooks.ClientSpellCastHelperMixin",
+    "dev.muon.medieval_skills.mixin.compat.twilightforest.ClientEventsMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

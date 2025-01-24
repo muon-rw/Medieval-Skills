@@ -1,0 +1,135 @@
+{
+    "experience_per_level": {
+        "type": "values",
+        "data": {
+            "values": [250, 250, 250, 250, 250, 250, 250, 250, 250, 250,
+                      500, 500, 500, 500, 500, 500, 500, 500, 500, 500,
+                      750]
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:mine_block",
+            "data": {
+                "variables": {
+                    "silk_touch": {
+                        "operations": [
+                            {
+                                "type": "get_tool_item_stack"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "nbt": "{Enchantments:[{id:\"minecraft:silk_touch\"}]}"
+                                }
+                            }
+                        ]
+                    },
+                    "is_ore": {
+                        "operations": [
+                            {
+                                "type": "get_mined_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#c:ores"
+                                }
+                            }
+                        ]
+                    },
+                    "stone_tier": {
+                        "operations": [
+                            {
+                                "type": "get_mined_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#needs_stone_tool"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 5,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    },
+                    "iron_tier": {
+                        "operations": [
+                            {
+                                "type": "get_mined_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#needs_iron_tool"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 10,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    },
+                    "diamond_tier": {
+                        "operations": [
+                            {
+                                "type": "get_mined_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#needs_diamond_tool"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 15,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    },
+                    "netherite_tier": {
+                        "operations": [
+                            {
+                                "type": "get_mined_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#medievalorigins:above_diamond"
+                                }
+                            },
+                            {
+                                "type": "switch",
+                                "data": {
+                                    "true": 20,
+                                    "false": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "!silk_touch & is_ore",
+                        "expression": "stone_tier + iron_tier + diamond_tier + netherite_tier"
+                    },
+                    {
+                        "condition": "!silk_touch & !is_ore",
+                        "expression": "1"
+                    }
+                ]
+            }
+        }
+    ]
+}
