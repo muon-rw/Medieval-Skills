@@ -105,7 +105,7 @@ repositories {
     maven("https://maven.shedaniel.me/")
     maven("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/")
     maven("https://maven.kosmx.dev/")
-    maven("https://maven.octo-studios.com/releases")
+    maven("https://maven.theillusivec4.top/")
     maven("https://maven.puffish.net")
 }
 
@@ -130,12 +130,6 @@ dependencies {
     implementation("com.github.glitchfiend:TerraBlender-neoforge:1.21.1-4.1.0.7")
     runtimeOnly("top.theillusivec4.curios:curios-neoforge:9.0.12+1.21")
 
-    // Apotheosis
-    implementation("dev.shadowsoffire:Placebo:${Versions.MINECRAFT}-${Versions.PLACEBO}")
-    implementation("dev.shadowsoffire:Apotheosis:${Versions.MINECRAFT}-${Versions.APOTHEOSIS}")
-    implementation("dev.shadowsoffire:ApothicAttributes:${Versions.MINECRAFT}-${Versions.APOTHIC_ATTRIBUTES}")
-    implementation("dev.shadowsoffire:ApothicSpawners:${Versions.MINECRAFT}-${Versions.APOTHIC_SPAWNERS}")
-    implementation("dev.shadowsoffire:ApothicEnchanting:${Versions.MINECRAFT}-${Versions.APOTHIC_ENCHANTING}")
 
 }
 

@@ -7,5 +7,10 @@
             "item": "bow"
         }
     },
-    "background": "textures/gui/advancements/backgrounds/adventure.png"
+    "background": {
+        "texture": "medieval_skills/gui/backgrounds/clearing.png",
+        "width": 512,
+        "height": 256,
+        "position": "fill"
+    }
 }
