@@ -19,9 +19,4 @@ public class MedievalPlatformHelperFabric implements MedievalPlatformHelper {
         return FabricLoader.getInstance().isDevelopmentEnvironment();
     }
 
-    @Override
-    public FTBHelper getFTBHelper() {
-        return new FTBHelperFabric();
-    }
-
 }

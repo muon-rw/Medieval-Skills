@@ -4,10 +4,10 @@ import dev.muon.medieval_skills.platform.MedievalPlatformHelperFabric;
 import dev.muon.medieval_skills.platform.Services;
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 
-public class MedievalFabricPre implements PreLaunchEntrypoint {
+public class MedievalSkillsFabricPre implements PreLaunchEntrypoint {
     @Override
     public void onPreLaunch() {
-        Medieval.setHelper(new MedievalPlatformHelperFabric());
+        MedievalSkills.setHelper(new MedievalPlatformHelperFabric());
         Services.setup(new MedievalPlatformHelperFabric());
     }
 }

@@ -25,6 +25,7 @@ repositories {
     maven("https://maven.kosmx.dev/")
     maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
     maven("https://maven.puffish.net")
+    maven("https://maven.azuredoom.com/mods")
 }
 
 dependencies {
@@ -52,7 +53,7 @@ dependencies {
 
     // Accessories
     modImplementation("io.wispforest:accessories-fabric:${Versions.ACCESSORIES}")
-    modLocalRuntime("curse.maven:accessories-tc-layer-1005680:6008871")
+    modImplementation("curse.maven:accessories-tc-layer-1005680:6420642")
 
     // Thermoo
     modImplementation("com.github.thedeathlycow:thermoo:v4.2.5")
@@ -64,14 +65,38 @@ dependencies {
         exclude("net.fabricmc.fabric-api")
     }
 
-    // Dehydration
-    modImplementation("curse.maven:dehydration-410830:5709714")
-
-    // Spell Engine
+    // RPG Series
+    modImplementation ("curse.maven:skill-tree-1311513:6802736")
     modImplementation("maven.modrinth:spell-engine:${Versions.SPELL_ENGINE}+${Versions.MINECRAFT}")
     modImplementation("maven.modrinth:spell-power:${Versions.SPELL_POWER}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:ranged-weapon-api:${Versions.RANGED_WEAPON_API}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:wizards:${Versions.WIZARDS}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:archers:${Versions.ARCHERS}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:paladins-and-priests:${Versions.PALADINS}+${Versions.MINECRAFT}-fabric")
+    modImplementation("maven.modrinth:rogues-and-warriors:${Versions.ROGUES}+${Versions.MINECRAFT}")
+
+    modImplementation("maven.modrinth:combat-roll:${Versions.COMBAT_ROLL}+${Versions.MINECRAFT}-fabric")
+    modImplementation("maven.modrinth:better-combat:${Versions.BETTER_COMBAT}+${Versions.MINECRAFT}-fabric")
+
+
+    modImplementation("mod.azure.azurelibarmor:azurelibarmor-fabric-${Versions.MINECRAFT}:${Versions.AZURELIB}")
+
+    modImplementation("maven.modrinth:shield-api:${Versions.SHIELD_API}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:structure-pool-api:${Versions.STRUCTURE_POOL}+${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:runes:${Versions.RUNES}+${Versions.MINECRAFT}")
+
+    // More RPG
+    modImplementation("maven.modrinth:more-rpg-classes:${Versions.MORE_RPG_CLASSES}-${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:elemental-wizards-rpg:${Versions.ELEMENTAL_WIZARDS}-${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:witcher-rpg-class:${Versions.WITCHER}-${Versions.MINECRAFT}")
+    modImplementation("maven.modrinth:archers-expansion:${Versions.ARCHERS_EXP}-${Versions.MINECRAFT}")
+
     modLocalRuntime("dev.kosmx.player-anim:player-animation-lib-fabric:${Versions.PLAYER_ANIMATOR}")
     implementation("com.github.ZsoltMolnarrr:TinyConfig:${Versions.TINY_CONFIG}")
+
+    // Forgville
+    modImplementation("curse.maven:rpgmana-1021902:6802792")
+    modImplementation("curse.maven:extra-spell-attributes-941480:6717207")
 
 }
 

@@ -8,13 +8,13 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(Medieval.MOD_ID)
-public class MedievalNeoForge {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Medieval.MOD_ID);
+@Mod(MedievalSkills.MOD_ID)
+public class MedievalSkillsNeoForge {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MedievalSkills.MOD_ID);
 
-    public MedievalNeoForge(IEventBus eventBus) {
-        Medieval.init();
-        Medieval.setHelper(new MedievalPlatformHelperNeoForge());
+    public MedievalSkillsNeoForge(IEventBus eventBus) {
+        MedievalSkills.init();
+        MedievalSkills.setHelper(new MedievalPlatformHelperNeoForge());
         Services.setup(new MedievalPlatformHelperNeoForge());
 
         CREATIVE_MODE_TABS.register(eventBus);

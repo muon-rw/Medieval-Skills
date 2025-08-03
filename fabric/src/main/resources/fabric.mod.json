@@ -20,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.muon.medieval_skills.MedievalFabric"
+      "dev.muon.medieval_skills.MedievalSkillsFabric"
     ],
     "preLaunch": [
-      "dev.muon.medieval_skills.MedievalFabricPre"
+      "dev.muon.medieval_skills.MedievalSkillsFabricPre"
     ],
     "mixinsquared-adjuster": [
       "dev.muon.medieval_skills.mixin.MedievalMixinAdjuster"
