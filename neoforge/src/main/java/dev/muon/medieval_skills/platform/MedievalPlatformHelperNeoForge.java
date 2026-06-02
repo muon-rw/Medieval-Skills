@@ -25,8 +25,4 @@ public class MedievalPlatformHelperNeoForge implements MedievalPlatformHelper {
         return !FMLLoader.isProduction();
     }
 
-    @Override
-    public FTBHelper getFTBHelper() {
-        return new FTBHelperNeoForge();
-    }
 }

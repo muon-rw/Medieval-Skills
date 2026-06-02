@@ -47,6 +47,13 @@ dependencies {
     annotationProcessor("io.github.llamalad7:mixinextras-common:${Versions.MIXIN_EXTRAS}")
     compileOnly("net.fabricmc:sponge-mixin:${Versions.FABRIC_MIXIN}")
 
+    /*
+    compileOnly("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+    accessTransformers("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+    interfaceInjectionData("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+
+
+     */
     compileOnly("io.wispforest:accessories-common:${Versions.ACCESSORIES}-mojmap")
     compileOnly("mezz.jei:jei-${Versions.MINECRAFT}-common-api:${Versions.JEI}")
     compileOnly("dev.emi:emi-xplat-mojmap:${Versions.EMI}:api")

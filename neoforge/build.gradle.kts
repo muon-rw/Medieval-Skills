@@ -115,6 +115,11 @@ dependencies {
     implementation("net.puffish:skillsmod:${Versions.PUFFISH_SKILLS}:neoforge")
     implementation("net.puffish:attributesmod:${Versions.PUFFISH_ATTRIBUTES}:neoforge")
 
+    // OwO what's this?
+    implementation("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+    accessTransformers("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+    interfaceInjectionData("io.wispforest:owo-lib-neoforge:${Versions.OWO_NEO}")
+
     // Accessories
     implementation("io.wispforest:accessories-neoforge:${Versions.ACCESSORIES}")
     implementation("curse.maven:accessories-cc-layer-1005683:5823562")

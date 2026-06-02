@@ -51,6 +51,10 @@ dependencies {
     modImplementation("net.puffish:skillsmod:${Versions.PUFFISH_SKILLS}:fabric")
     modImplementation("net.puffish:attributesmod:${Versions.PUFFISH_ATTRIBUTES}:fabric")
 
+    // OWO
+    modImplementation("io.wispforest:owo-lib:${Versions.OWO_FABRIC}")
+    include("io.wispforest:owo-sentinel:${Versions.OWO_FABRIC}")
+
     // Accessories
     modImplementation("io.wispforest:accessories-fabric:${Versions.ACCESSORIES}")
     modImplementation("curse.maven:accessories-tc-layer-1005680:6420642")

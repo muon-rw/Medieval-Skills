@@ -21,11 +21,15 @@ object Versions {
     const val FABRIC_MIXIN = "0.15.0+mixin.0.8.7"
     const val MIXIN_EXTRAS = "0.4.1"
 
-    const val ACCESSORIES = "1.1.0-beta.43+1.21.1"
+    const val ACCESSORIES = "1.1.0-beta.48+1.21.1"
+    const val OWO_NEO = "0.12.15.1-beta.6+1.21"
+    const val OWO_FABRIC = "0.12.15.4+1.21"
+
     const val JEI = "19.17.0.193"
     const val EMI = "1.1.13+1.21.1"
     const val JAVA = 21
     const val CLOTH_CONFIG_VERSION = "15.0.140"
+
 
     const val GECKOLIB = "1.21.1:4.7.3"
     const val PLAYER_ANIMATOR = "2.0.1+1.21.1"
